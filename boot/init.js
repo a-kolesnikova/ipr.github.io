@@ -40,7 +40,7 @@ define(['knockout','amplify'], function(ko, amplify) {
         self.imageSrc = previewImage;
         self.shortDescription = data.short_description;
     }
-    $.getJSON("../products.json", function(response) {
+    $.getJSON("products.json", function(response) {
         if (response.constructor === Object) {
             var arrayOfProducts = [];
             for (var product in response) {
