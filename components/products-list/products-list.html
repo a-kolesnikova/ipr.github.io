@@ -1,0 +1,18 @@
+<div class="products-list">
+  <div class="row" data-bind="foreach: pager.currentPageRecords">
+    <div class="col-xs-12 col-sm-4">
+      <div class="products-item">
+        <div class="product-image">
+          <img data-bind="attr: {src: imageSrc}">
+        </div>
+        <div class="product-title">
+          <a href="#" data-bind="text: name"></a>
+        </div>
+        <div class="product-description" data-bind="text: shortDescription"></div>
+        <div class="product-price" data-bind="text: price"></div>
+        <button type="button" title="Add to Cart" class="btn btn-info btn-cart"><span>Add to Cart</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="pagination"></div>

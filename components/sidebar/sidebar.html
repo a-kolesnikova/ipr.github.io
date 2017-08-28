@@ -1,0 +1,18 @@
+<sidebar class="layered-navigation">
+  <div class="content">
+    <div class="filter-list">
+    <div data-bind="foreach: filter.filters">
+      <div>
+        <span data-bind="text: Name"></span>:<br />
+      </div>
+      <div data-bind="if: Type == 'select'">
+        <select data-bind="options: Options, optionsText: 'Name', value: CurrentOption"></select>
+      </div>
+      <div data-bind="if: Type == 'text'">
+        <input type="text" data-bind="value: Value, valueUpdate: 'afterkeydown'" />
+      </div>
+    </div>
+  </div>
+</div>
+</sidebar>
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>IPR</title>
+  <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'>
+  <meta name="keywords" content="IPR">
+  <meta name="description" content="IPR">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="imagetoolbar" content="no">
+  <meta name="msthemecompatible" content="no">
+  <meta name="copyright" content="Авторские права">
+  
+  <meta name="HandheldFriendly" content="true">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="text/javascript" data-main="boot/config.js" src="boot/require.js"></script>
+</head>
+<body class="test">
+<!--include header-->
+<div data-bind='component: "header"'></div>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+          <!--include sidebar-->
+          <div data-bind='component: "side-bar"'></div>
+        </div>
+        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+          <div class="category-products">
+            <!--include toolbar-->
+            <div data-bind='component: "toolbar"'></div>
+            <!--include products-list-->
+            <div data-bind='component: "products-list"'></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div data-bind='component: "footer"'></div>
+  <!--include footer-->
+</body>
+</html>

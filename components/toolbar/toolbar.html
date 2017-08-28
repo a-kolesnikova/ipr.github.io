@@ -1,0 +1,13 @@
+<div class="toolbar clearfix">
+	<div class="pager">
+		<p class="amount"><span data-bind="text: sorter.recordCount"></span> items found</p>
+	</div>
+	<div class="sorter">
+		<div class="sort-by">
+			<select data-bind="options: sorter.pageSizeOptions, value: sorter.currentPageSize, event: { change: sorter.onPageSizeChange }"></select>
+			<select data-bind="options: sorter.sortOptions, optionsText: 'Name', value: sorter.currentSortOption"></select>
+			Direction:
+			<select data-bind="options: sorter.sortDirections, optionsText: 'Name', value: sorter.currentSortDirection"></select>
+		</div>
+	</div>
+</div>
